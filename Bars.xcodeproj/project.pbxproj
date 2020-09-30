@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		415E06B883EB9A02D9636BF6 /* Pods_Bars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59967814B7BD33DF5BAB406 /* Pods_Bars.framework */; };
+		8B13C9F925247BF500B392C7 /* TokensService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B13C9F825247BF500B392C7 /* TokensService.swift */; };
+		8B13C9FC25247C9D00B392C7 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B13C9FB25247C9D00B392C7 /* URLs.swift */; };
+		8B13CA012524815D00B392C7 /* TransportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B13CA002524815D00B392C7 /* TransportService.swift */; };
 		8B40911D2522050C00A22AC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B40911C2522050C00A22AC0 /* AppDelegate.swift */; };
 		8B4091262522050E00A22AC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B4091252522050E00A22AC0 /* Assets.xcassets */; };
 		8B4091292522050E00A22AC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B4091272522050E00A22AC0 /* LaunchScreen.storyboard */; };
@@ -24,6 +27,9 @@
 
 /* Begin PBXFileReference section */
 		65594059AADFB75A7ED18F71 /* Pods-Bars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bars.release.xcconfig"; path = "Target Support Files/Pods-Bars/Pods-Bars.release.xcconfig"; sourceTree = "<group>"; };
+		8B13C9F825247BF500B392C7 /* TokensService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokensService.swift; sourceTree = "<group>"; };
+		8B13C9FB25247C9D00B392C7 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
+		8B13CA002524815D00B392C7 /* TransportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportService.swift; sourceTree = "<group>"; };
 		8B4091192522050C00A22AC0 /* Bars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B40911C2522050C00A22AC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B4091252522050E00A22AC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +68,13 @@
 				A59967814B7BD33DF5BAB406 /* Pods_Bars.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B13C9FF2524800700B392C7 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		8B4091102522050C00A22AC0 = {
@@ -104,6 +117,7 @@
 			children = (
 				8B40917A252223B100A22AC0 /* Auth */,
 				8B40915C25220BD500A22AC0 /* Map */,
+				8B13C9FF2524800700B392C7 /* Menu */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -112,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				8BC2DFD32523D175005242D8 /* AuthService.swift */,
+				8B13CA002524815D00B392C7 /* TransportService.swift */,
+				8B13C9F825247BF500B392C7 /* TokensService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -154,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				8B40919C2522484400A22AC0 /* Config.swift */,
+				8B13C9FB25247C9D00B392C7 /* URLs.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -303,12 +320,15 @@
 				8B40915725220BC000A22AC0 /* MapViewModel.swift in Sources */,
 				8B40911D2522050C00A22AC0 /* AppDelegate.swift in Sources */,
 				8B409183252223E700A22AC0 /* AuthViewRouter.swift in Sources */,
+				8B13C9FC25247C9D00B392C7 /* URLs.swift in Sources */,
 				8BC2DFD42523D175005242D8 /* AuthService.swift in Sources */,
 				8B409180252223DB00A22AC0 /* AuthViewModel.swift in Sources */,
 				8B40917C252223C800A22AC0 /* AuthViewController.swift in Sources */,
 				8B40919D2522484400A22AC0 /* Config.swift in Sources */,
 				8B40915A25220BD000A22AC0 /* MapViewRouter.swift in Sources */,
 				8B40914725220B6800A22AC0 /* MapViewController.swift in Sources */,
+				8B13C9F925247BF500B392C7 /* TokensService.swift in Sources */,
+				8B13CA012524815D00B392C7 /* TransportService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
