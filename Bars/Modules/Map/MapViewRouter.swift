@@ -19,5 +19,5 @@ final class MapViewRouter: MapViewRouterProtocol {
     init(view: MapViewController) {
         self.view = view
     }
-    
+
 }

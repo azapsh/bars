@@ -31,6 +31,7 @@ final class AuthViewRouter: AuthViewRouterProtocol {
             viewModel.router = router
             viewController.viewModel = viewModel
             let nc = UINavigationController(rootViewController: viewController)
+            nc.setNavigationBarHidden(true, animated: false)
             window.rootViewController = nc
             window.makeKeyAndVisible()
         }
