@@ -36,7 +36,7 @@ class AuthViewController: UIViewController {
         let textField = UITextField()
         textField.textColor = UIColor.black
         textField.borderStyle = .roundedRect
-        textField.text = "raz"
+       // textField.text = "raz"
         textField.delegate = self
         textField.returnKeyType = .next
         
@@ -47,7 +47,7 @@ class AuthViewController: UIViewController {
         let textField = UITextField()
         textField.textColor = UIColor.black
         textField.borderStyle = .roundedRect
-        textField.text = "gabitus"
+     //   textField.text = "gabitus"
         textField.delegate = self
         textField.returnKeyType = .send
         textField.placeholder = NSLocalizedString("AuthViewModule.password.placeholder", comment: "")
