@@ -105,6 +105,16 @@ class AuthViewController: UIViewController {
                 self?.goAuth()
             })
             .disposed(by: rxdisposableBag)
+        
+        viewModel?.authError
+            .asObservable()
+            .subscribe(onNext: { [weak self] error in
+                if !error.isEmpty {
+                    self?.showAlert(error)
+                }
+            })
+            .disposed(by: rxdisposableBag)
+
     }
     
     func goAuth() {

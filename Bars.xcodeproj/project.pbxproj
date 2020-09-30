@@ -11,6 +11,11 @@
 		8B13C9F925247BF500B392C7 /* TokensService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B13C9F825247BF500B392C7 /* TokensService.swift */; };
 		8B13C9FC25247C9D00B392C7 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B13C9FB25247C9D00B392C7 /* URLs.swift */; };
 		8B13CA012524815D00B392C7 /* TransportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B13CA002524815D00B392C7 /* TransportService.swift */; };
+		8B13CA042524859000B392C7 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B13CA032524859000B392C7 /* Transport.swift */; };
+		8B13CA072524859D00B392C7 /* TransportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B13CA062524859D00B392C7 /* TransportModel.swift */; };
+		8B13CA892524C60900B392C7 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B13CA882524C60900B392C7 /* UIViewController+Extension.swift */; };
+		8B13CA8C2524CCA000B392C7 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B13CA8B2524CCA000B392C7 /* Session.swift */; };
+		8B13CA8F2524CCAB00B392C7 /* SessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B13CA8E2524CCAB00B392C7 /* SessionModel.swift */; };
 		8B40911D2522050C00A22AC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B40911C2522050C00A22AC0 /* AppDelegate.swift */; };
 		8B4091262522050E00A22AC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B4091252522050E00A22AC0 /* Assets.xcassets */; };
 		8B4091292522050E00A22AC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B4091272522050E00A22AC0 /* LaunchScreen.storyboard */; };
@@ -30,6 +35,11 @@
 		8B13C9F825247BF500B392C7 /* TokensService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokensService.swift; sourceTree = "<group>"; };
 		8B13C9FB25247C9D00B392C7 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
 		8B13CA002524815D00B392C7 /* TransportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportService.swift; sourceTree = "<group>"; };
+		8B13CA032524859000B392C7 /* Transport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transport.swift; sourceTree = "<group>"; };
+		8B13CA062524859D00B392C7 /* TransportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportModel.swift; sourceTree = "<group>"; };
+		8B13CA882524C60900B392C7 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		8B13CA8B2524CCA000B392C7 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		8B13CA8E2524CCAB00B392C7 /* SessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionModel.swift; sourceTree = "<group>"; };
 		8B4091192522050C00A22AC0 /* Bars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B40911C2522050C00A22AC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B4091252522050E00A22AC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -135,6 +145,7 @@
 		8B40914425220B4500A22AC0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8B13CA882524C60900B392C7 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -142,6 +153,10 @@
 		8B40914525220B4E00A22AC0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8B13CA062524859D00B392C7 /* TransportModel.swift */,
+				8B13CA032524859000B392C7 /* Transport.swift */,
+				8B13CA8E2524CCAB00B392C7 /* SessionModel.swift */,
+				8B13CA8B2524CCA000B392C7 /* Session.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -320,6 +335,8 @@
 				8B40915725220BC000A22AC0 /* MapViewModel.swift in Sources */,
 				8B40911D2522050C00A22AC0 /* AppDelegate.swift in Sources */,
 				8B409183252223E700A22AC0 /* AuthViewRouter.swift in Sources */,
+				8B13CA892524C60900B392C7 /* UIViewController+Extension.swift in Sources */,
+				8B13CA072524859D00B392C7 /* TransportModel.swift in Sources */,
 				8B13C9FC25247C9D00B392C7 /* URLs.swift in Sources */,
 				8BC2DFD42523D175005242D8 /* AuthService.swift in Sources */,
 				8B409180252223DB00A22AC0 /* AuthViewModel.swift in Sources */,
@@ -327,8 +344,11 @@
 				8B40919D2522484400A22AC0 /* Config.swift in Sources */,
 				8B40915A25220BD000A22AC0 /* MapViewRouter.swift in Sources */,
 				8B40914725220B6800A22AC0 /* MapViewController.swift in Sources */,
+				8B13CA8C2524CCA000B392C7 /* Session.swift in Sources */,
 				8B13C9F925247BF500B392C7 /* TokensService.swift in Sources */,
 				8B13CA012524815D00B392C7 /* TransportService.swift in Sources */,
+				8B13CA8F2524CCAB00B392C7 /* SessionModel.swift in Sources */,
+				8B13CA042524859000B392C7 /* Transport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

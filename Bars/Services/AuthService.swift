@@ -29,8 +29,16 @@ final class AuthService {
                 case .success(let value):
                     if status == 200 {
                         let json = JSON(value)
+                        let success = json["success"].boolValue
+                        let data = json["data"].stringValue
+                        if success {
+                            TokensService.shared.accessToken = data
+                            completion( true, String(status))
+                        } else {
+                            completion( false, data)
+                        }
                         print(json)
-                        completion( true, String(status))
+                        
                     } else {
                         completion( false, String(status))
                     }
@@ -53,17 +61,25 @@ final class AuthService {
         var _headers = HTTPHeaders()
         _headers["Authorization"] = "Bearer " + accessToken
         
-        AF.request(url, method: .post, parameters: parameters,encoding: URLEncoding.default, headers: _headers)
+        AF.request(url, method: .get, parameters: parameters,encoding: URLEncoding.default, headers: _headers)
             .responseJSON { response in
                 
                 let status = response.response?.statusCode ?? 0
-                
+                print("getSessionID>", status)
                 switch response.result {
                 case .success(let value):
                     if status == 200 {
                         let json = JSON(value)
-                        print(json)
-                        completion( true, String(status))
+                        let success = json["success"].boolValue
+                        let data = json["data"]
+                        if success, !data.isEmpty {
+                            let sessionid = data[0]["id"].stringValue
+                            TokensService.shared.sessionId = sessionid
+                            completion( true, String(status))
+                        } else {
+                            completion( false, data.stringValue)
+                        }
+                      
                     } else {
                         completion( false, String(status))
                     }
