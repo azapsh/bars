@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Bars
+
+  Created by Ахмед Фокичев on 28.09.2020.
+  
+*/
+
+// MARK: ProfileSettingsModule
+"AuthViewModule.title" = "Барс";
+"AuthViewModule.login.placeholder" = "Имя";
+"AuthViewModule.password.placeholder" = "Пароль";
+"AuthViewModule.button.title" = "вход";
+
+
